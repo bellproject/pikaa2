@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+ 
+<tiles-definitions>
+     <definition name="base.defination" template="/WEB-INF/pages/layout.jsp">
+         <put-attribute name="title" value=""/>
+         <put-attribute name="header" value="/WEB-INF/pages/header.jsp"/>
+         <put-attribute name="body" value=""/>
+         <put-attribute name="footer" value="/WEB-INF/pages/footer.jsp" />
+     </definition>
+     
+ 	<definition name="welcome-page" extends="base.defination">
+         <put-attribute name="title" value="welcome"/>
+         <put-attribute name="body" value="/WEB-INF/pages/welcome.jsp"/>
+     </definition>
+
+ 	<definition name="zipcode-page" extends="base.defination">
+         <put-attribute name="title" value="Zipcode"/>
+         <put-attribute name="body" value="/WEB-INF/pages/zipcode.jsp"/>
+     </definition>
+     
+     <definition name="location-list" extends="base.defination">
+         <put-attribute name="title" value="locations"/>
+         <put-attribute name="body" value="/WEB-INF/pages/locationsList.jsp"/>
+     </definition>
+     
+   <!--   <definition name="stud-reg" extends="base.defination">
+         <put-attribute name="title" value="student login"/>
+         <put-attribute name="body" value="/WEB-INF/pages/stud-reg.jsp"/>
+     </definition>
+ 
+    <definition name="success" extends="base.defination">
+        <put-attribute name="title" value="success page"/>
+        <put-attribute name="body" value="/WEB-INF/pages/success.jsp"/>
+    </definition>
+    
+    <definition name="stud-list" extends="base.defination">
+        <put-attribute name="title" value="List page"/>
+        <put-attribute name="body" value="/WEB-INF/pages/stud-list.jsp"/>
+    </definition>
+    
+     <definition name="edit-form" extends="base.defination">
+        <put-attribute name="title" value="edit page"/>
+        <put-attribute name="body" value="/WEB-INF/pages/edit-form.jsp"/>
+    </definition> -->
+    
+ 
+</tiles-definitions>
